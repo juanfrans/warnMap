@@ -41,7 +41,10 @@ map.on('load', function() {
         'circle-color': 'lightgray',
         'circle-stroke-color': 'black',
         'circle-stroke-width': 0.5,
-        'circle-radius': 3
+        'circle-radius': ['interpolate',['linear'],['zoom'],
+            10, 4,
+            14, 6,
+            18, 12]
     }
   },'road-label');
 });
