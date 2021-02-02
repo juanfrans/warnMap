@@ -47,6 +47,23 @@ map.on('load', function() {
             18, 12]
     }
   },'road-label');
+  map.addLayer({
+    id: 'warnData2019',
+    type: 'circle',
+    source: {
+      type: 'geojson',
+      data: 'data/warnDataGoogle2019.geojson'
+    },
+    paint: {
+        'circle-color': 'red',
+        'circle-stroke-color': 'black',
+        'circle-stroke-width': 0.5,
+        'circle-radius': ['interpolate',['linear'],['zoom'],
+            10, 4,
+            14, 6,
+            18, 12]
+    }
+  },'road-label');
 });
 
 // Create the popup
