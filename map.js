@@ -35,7 +35,7 @@ map.on('load', function() {
     type: 'circle',
     source: {
       type: 'geojson',
-      data: 'data/warnData.geojson'
+      data: 'data/warnDataGoogle.geojson'
     },
     paint: {
         'circle-color': 'lightgray',
