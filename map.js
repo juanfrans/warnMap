@@ -74,6 +74,7 @@ map.on('click', 'warnData', function (e) {
     var numberAffected = e.features[0].properties.numberAffected;
     var totalEmployees = e.features[0].properties.totalEmployees;
     var reasonDislocation = e.features[0].properties.reasonDislocation;
+    var noticeDate = e.features[0].properties.noticeDate;
     // wnrPerc = (wnrPerc * 100).toFixed(0);
     // totalVotes = totalVotes.toLocaleString();
     companyName = companyName.toUpperCase();
@@ -84,7 +85,8 @@ map.on('click', 'warnData', function (e) {
             +"Business type: <b>"+businessType+'</b><br>'
             +"Number of people affected: <b>"+numberAffected+'</b><br>'
             +"Total number of employees: <b>"+totalEmployees+'</b><br>'
-            +"Reason for closing: <b>"+reasonDislocation+'</b></p>')
+            +"Reason for closing: <b>"+reasonDislocation+'</b><br>'
+            +"Notice date: <b>"+noticeDate+'</p>')
         .addTo(map);
 });
 // Change the cursor to a pointer when the mouse is over the warnData layer.
